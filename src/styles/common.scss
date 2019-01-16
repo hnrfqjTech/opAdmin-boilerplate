@@ -1,0 +1,267 @@
+// 全局变量
+@import './variables.scss';
+// ele样式覆盖
+// @import './element-ui.scss';
+// 顶部右侧显示
+@import './top.scss';
+// 导航标签
+@import './tags.scss';
+// 工具类函数
+@import './mixin.scss';
+// 侧面导航栏
+@import './sidebar.scss';
+// 动画
+@import './animate/vue-transition.scss';
+//主题
+@import './theme/index.scss';
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 500;
+}
+
+@include scrollBar();
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Microsoft YaHei";
+    line-height: 2;
+    font-size: 14px;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+fieldset,
+img {
+    border: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+em {
+    font-style: normal;
+}
+
+input,
+button,
+select,
+textarea {
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+//禁用了文本的拖拉，尤其在谷歌下
+p {
+    text-align: justify;
+    text-justify: distribute;
+}
+
+//为了使文本段落左右两边对齐
+p {
+    word-wrap: break-word
+}
+
+a {
+    text-decoration: none;
+}
+
+i {
+    display: inline-block;
+}
+
+
+/*a:hover { color: #f60; text-decoration:none; }*/
+
+address,
+cite,
+code,
+em,
+th {
+    font-weight: normal;
+    font-style: normal;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+/*a:link{color:#009;}*/
+
+
+/*a:visited{color:#800080;}*/
+
+a:hover,
+a:active,
+a:focus {
+    text-decoration: underline;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.padding {
+    padding: 0 !important;
+}
+
+.margin {
+    margin: 0 !important;
+}
+
+.pull-right {
+    float: right !important;
+    ;
+}
+
+.pull-left {
+    float: left !important;
+}
+
+.pull-center {
+    text-align: center;
+}
+
+.pull-flex {
+    display: flex;
+}
+
+.pull-overflow {
+    overflow: hidden;
+}
+
+.pull-auto {
+    height: auto;
+    overflow: hidden;
+}
+
+.pull-height {
+    height: 100%;
+    overflow: hidden;
+}
+
+.pull-fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.grayMode {
+    filter: grayscale(100%);
+}
+
+.list-btn-group {
+    padding-bottom: 30px;
+    .el-form-item {
+        margin-bottom: 0 !important;
+    }
+}
+// 新增编辑页面 当列样式
+.edit-form-width {
+    width:50%;
+    margin:0 auto;
+    min-width:680px;
+}
+.edit-form-btngroup{
+    display: flex;
+    justify-content: center;
+}
+
+// 新增编辑页面 多列样式
+.edit-form-width100{
+    width: 100%;
+    margin:0 auto;
+    min-width:680px;
+}
+// 导入按钮
+.upload-logo {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+// 侧边栏收缩样式重置
+.el-menu--collapse .menu-wrapper .el-menu-item span,
+.el-menu--collapse .menu-wrapper .el-submenu .el-submenu__title span {
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  visibility: hidden;
+  display: inline-block;
+}
+.el-menu--collapse .menu-wrapper .el-menu-item .el-submenu__icon-arrow,
+.el-menu--collapse .menu-wrapper .el-submenu .el-submenu__title .el-submenu__icon-arrow {
+  display: none;
+}
+.order-back-reason {
+    min-width: 350px;
+    .el-dialog__header {
+        padding-top: 10px;
+        background-color: #409EFF;
+        text-align: left;
+    }
+    .el-dialog__title {
+        color: #fff;
+    }
+    textarea {
+        width: auto;
+    }
+    .el-dialog__headerbtn {
+        top: 15px;
+        .el-dialog__close {
+            color: #fff;
+        }
+    }
+}

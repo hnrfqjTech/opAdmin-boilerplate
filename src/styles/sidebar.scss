@@ -1,0 +1,27 @@
+.sidebar-container {
+  background: #2c304d;
+  transition: width .6s;
+  .title-icon {
+    margin-right: 8px;
+  }
+  &.is-active{
+    width: 64px !important;
+  }
+}
+.el-menu-item.is-active{
+  color: $mainBg  !important;
+}
+.nest-menu .el-submenu>.el-submenu__title,
+.el-submenu .el-menu-item {
+  background-color: #1c1f39 !important;
+  font-size: 12px;
+  &:hover{
+    background: #2c304d !important;
+  }
+}
+.el-submenu__title {
+  .title-icon {
+    color: #fff;
+    opacity: .8;
+  }
+}

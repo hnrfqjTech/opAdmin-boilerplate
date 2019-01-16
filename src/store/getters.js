@@ -1,0 +1,26 @@
+const getters = {
+  tag: state => state.tags.tag,
+  breadcrumbs: state => state.tags.breadcrumbs,
+  breadcrumbMode: () => 1, // 1.简约-面包屑，2.tabs
+  tagList: state => state.tags.tagList,
+  tagCurrent: state => state.tags.tagCurrent,
+  tagWel: state => state.tags.tagWel,
+  indexRequestStatus: state => state.common.indexRequestStatus,
+  website: state => state.common.website,
+  theme: state => state.common.theme,
+  themeName: state => state.common.themeName,
+  isCollapse: state => state.common.isCollapse,
+  isLock: state => state.common.isLock,
+  isFullScren: state => state.common.isFullScren,
+  lockPasswd: state => state.common.lockPasswd,
+  token: state => state.user.token,
+  roles: state => state.user.roles,
+  userInfo: state => state.user.userInfo,
+  permission: state => state.user.permission,
+  menu: state => state.user.menu,
+  menuAll: state => state.user.menuAll,
+  errLog: state => state.errLog.errLog,
+  messageLength: state => state.user.messageLength,
+  currentCompany: state => state.user.currentCompany,
+};
+export default getters;

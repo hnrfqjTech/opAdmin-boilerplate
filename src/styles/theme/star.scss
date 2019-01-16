@@ -1,0 +1,118 @@
+.theme-star {
+  .avue-contail {
+    background-image: url("/static/img/bg/star-squashed.jpeg");
+    background-size: 100% 100%;
+  }
+  .el-card {
+    opacity: .9;
+  }
+  .top {
+    .el-dropdown {
+      color: #fff;
+      i {
+        color: #fff;
+      }
+    }
+    .top-item {
+      i {
+        color: #fff;
+      }
+    }
+    .top-button {
+      margin-left: 0;
+    }
+  }
+  .avue-tabs {
+    padding: 0 10px 0 0 !important;
+  }
+  .sidebar-container,
+  .logo,
+  .el-menu-item,
+  .el-submenu__title,
+  .el-menu {
+    opacity: .95;
+    background-color: transparent !important;
+  }
+  .el-menu {
+    .title-icon {
+      margin-right: 8px;
+    }
+  }
+  .tags-breadcrumb {
+    padding-left: 0;
+  }
+  .logo_title,
+  .tags-breadcrumb,
+    {
+    color: #fff !important;
+    i {
+      color: #fff;
+    }
+  }
+  .el-menu--horizontal>.el-menu-item.is-active {
+    border-bottom: none;
+  }
+  .top {
+    border-bottom: none;
+  }
+  .tabs-breadcrumb {
+    .el-breadcrumb__inner a,
+    .el-breadcrumb__inner.is-link {
+      color: #fff;
+      opacity: .8;
+    }
+    .el-breadcrumb__item:last-child .el-breadcrumb__inner,
+    .el-breadcrumb__item:last-child .el-breadcrumb__inner a,
+    .el-breadcrumb__item:last-child .el-breadcrumb__inner a:hover,
+    .el-breadcrumb__item:last-child .el-breadcrumb__inner:hover {
+      color: #fff;
+    }
+  }
+  .tags-box, .tags-list {
+    padding-left: 0;
+  }
+  .tags-menu {
+    background-color: rgba(0, 0, 0, .6) !important;
+  }
+  .tag-item {
+    color: #fff !important;
+    border: none !important;
+    background-color: rgba(255, 255, 255, .5);
+    &.is-active {
+      color: #fff !important;
+      border: 1px solid #fff !important;
+      background-color: rgba(0, 0, 0, .4);
+      .tag-item-icon {
+        color: #fff !important;
+      }
+    }
+  }
+  .nest-menu .el-submenu>.el-submenu__title:hover,
+  .el-submenu .el-menu-item:hover {
+    background-color: rgba(0, 0, 0, .4) !important;
+  }
+  .el-menu--vertical {
+    background-color: rgba(0, 0, 0, .8)
+  }
+  .el-menu-item {
+    font-size: 12px;
+    opacity: .9;
+    &.is-active,
+    &.siderbar-active {
+      background-color: rgba(0, 0, 0, .4) !important;
+      span {
+        color: #fff !important;
+      }
+    }
+    color: #fff !important;
+    i {
+      color: #fff !important;
+    }
+  }
+  .el-submenu__title {
+    color: #fff !important;
+    i {
+      color: #fff !important;
+    }
+  }
+}
