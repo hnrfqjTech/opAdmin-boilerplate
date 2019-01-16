@@ -1,4 +1,4 @@
-# invoice-box
+# opAdmin-boilerplate
 
 ## Project setup
 ```
@@ -25,13 +25,9 @@ npm run test
 npm run lint
 ```
 
-### Run your unit tests
-```
-npm run test:unit
-```
 
 ### 注意事项
-* 静态资源放在根目录 publick/static 文件夹内，单个文件大于 50K 或文件较多时上 CDN
+* 静态资源放在根目录 public/static 内
 
 
 ### 可视化 src/visualize
